@@ -16,9 +16,11 @@ public class Animal {
      * @param owner - owner of animal
      */
     public Animal(Long id, Person owner) {
+
     }
 
     public Long getId() {
+
         return null;
     }
 
