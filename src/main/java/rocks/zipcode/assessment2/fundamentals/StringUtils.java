@@ -20,7 +20,6 @@ public class StringUtils {
             sb.append(" ");
         }
         sb.append(stringToBePadded);
-
         return sb.toString();
     }
 
@@ -30,8 +29,6 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by right-padding
      */
     public static String padRight(String stringToBePadded, int amountOfPadding) {
-
-
         return String.format("%1$-" + amountOfPadding, stringToBePadded);
     }
 
@@ -60,8 +57,7 @@ public class StringUtils {
        return ((string != null)
                && (!string.equals(""))
                && (string.matches("^[a-zA-Z]*$")));
-
-        }
+    }
 
 
     /**

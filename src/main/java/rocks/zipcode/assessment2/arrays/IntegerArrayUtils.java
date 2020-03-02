@@ -18,10 +18,7 @@ public class IntegerArrayUtils {
         for(int i = 0; i < integerArray.length; i++){
             addedInt[i] = integerArray[i];
             addedInt[integerArray.length] = valueToBeAdded;
-
         }
-
-
         return addedInt;
     }
 
@@ -38,9 +35,6 @@ public class IntegerArrayUtils {
                 replace[i] = integerArray[i];
              if (i == indexToInsertAt - 1);
             replace[i] = valueToBeInserted;
-//            else{
-//                replace[i] = integerArray[i - 1];
-//            }
         }
         return replace;
     }

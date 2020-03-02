@@ -48,12 +48,10 @@ public class PredicateUtilities {
         for (int i = 0; i < value; i++) {
             if (value % multiple!= 0) {
                 count++;
-
             }
             return true;
         }
-                return false;
-
+            return false;
     }
 
     /**

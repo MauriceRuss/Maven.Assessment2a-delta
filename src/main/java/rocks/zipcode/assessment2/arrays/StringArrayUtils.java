@@ -14,7 +14,6 @@ public class StringArrayUtils {
      */
     public static String[] getSubArray(String[] arrayToBeSpliced, int startingIndex, int endingIndex) {
         String[] gsa = Arrays.copyOfRange(arrayToBeSpliced, startingIndex, endingIndex);
-
         return gsa;
     }
 
@@ -26,7 +25,6 @@ public class StringArrayUtils {
      */
     public static String[] getEndingArray(String[] arrayToBeSpliced, int startingIndex) {
         String[] gea = Arrays.copyOfRange(arrayToBeSpliced, startingIndex, startingIndex + arrayToBeSpliced.length);
-
         return gea;
     }
 }
