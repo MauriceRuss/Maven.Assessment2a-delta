@@ -42,7 +42,8 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
-        return null;
+        String ans = string.replaceAll(charactersToRemove, "");
+        return ans;
     }
 
     /**
