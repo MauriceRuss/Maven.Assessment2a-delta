@@ -1,5 +1,6 @@
 package rocks.zipcode.assessment2.fundamentals;
 
+
 /**
  * @author leon on 28/11/2018.
  */
@@ -29,7 +30,16 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by right-padding
      */
     public static String padRight(String stringToBePadded, int amountOfPadding) {
-        return null;
+        if (stringToBePadded.length() >= amountOfPadding) {
+            return stringToBePadded;
+        }
+        StringBuilder sb = new StringBuilder();
+        while (sb.length() > amountOfPadding - stringToBePadded.length()) {
+            sb.append(" ");
+        }
+        sb.append(stringToBePadded);
+
+        return sb.toString();
     }
 
     /**
@@ -38,7 +48,14 @@ public class StringUtils {
      * @return the string repeated and concatenated `n` times
      */
     public static String repeatString(String stringToBeRepeated, int numberOfTimeToRepeat) {
-        return null;
+        int n = numberOfTimeToRepeat;
+        String in = stringToBeRepeated;
+
+        String result = "";
+        for (int i = 0; i < n; ++i) {
+            result += in;
+        }
+        return result;
     }
 
     /**
