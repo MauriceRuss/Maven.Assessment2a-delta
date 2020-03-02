@@ -15,7 +15,11 @@ public class IntegerArrayUtils {
      */
     public static Integer[] add(Integer[] integerArray, Integer valueToBeAdded) {
         Integer[] addedInt = new Integer[integerArray.length +1];
-        addedInt = add(addedInt, valueToBeAdded);
+        for(int i = 0; i < integerArray.length; i++){
+            addedInt[i] = integerArray[i];
+            addedInt[integerArray.length] = valueToBeAdded;
+
+        }
 
 
         return addedInt;

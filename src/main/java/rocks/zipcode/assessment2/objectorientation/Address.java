@@ -69,6 +69,11 @@ public class Address {
 
     @Override
     public boolean equals(Object o) {
-        return (Boolean)null;
-    }
+        if (o == this) {
+            return true;
+        }
+        if (!(o instanceof Address)) {
+        } return false;
+        }
+
 }
