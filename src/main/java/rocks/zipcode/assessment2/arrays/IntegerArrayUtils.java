@@ -53,23 +53,14 @@ public class IntegerArrayUtils {
      */
     public static Integer[] incrementEvenDecrementOdd(Integer[] integerArray) {
         Integer[] evenArray = new Integer[integerArray.length];
-        for(int i = 0; i < integerArray.length; i++){
-            if(integerArray[i]%2 == 0){
-                integerArray[i] = 0;
-                integerArray[i] = integerArray[i +1];
-                evenArray = integerArray;
+        for(int i = 0; i < integerArray.length; i++) {
+            if (integerArray[i] % 2 == 0) {
+                integerArray[i]++;
+            } else {
+                integerArray[i]--;
             }
         }
-        //Integer[] evenArray = new Integer[evenArray.length];
-        int n = 0;
-
-        for(int j : evenArray){
-            evenArray[n] = j +1;
-            n++;
-        }
-
-
-        return evenArray;
+        return integerArray;
 
     }
 
