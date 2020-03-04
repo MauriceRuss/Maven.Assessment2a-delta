@@ -78,11 +78,12 @@ public class StringUtils {
      * @return - true if string only contains special characters
      */
     public static Boolean isSpecialCharacterString(String string) {
-        if (((string != null)
-                && (!string.equals(""))
-                && (string.matches("^[a-zA-Z]*$")))) {
-            return true;
+        char[] charArray = string.toCharArray();
+        for(Character s : charArray) {
+            if( Character.isDigit(s) || Character.isAlphabetic(s)) {
+                return false;
+            }
         }
-        return false;
+        return true;
     }
 }
