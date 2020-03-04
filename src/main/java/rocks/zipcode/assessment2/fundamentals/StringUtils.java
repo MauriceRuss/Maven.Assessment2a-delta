@@ -12,15 +12,8 @@ public class StringUtils {
      */
     public static String padLeft(String stringToBePadded, int amountOfPadding) {
 //        String padded = String.format(amountOfPadding, stringToBePadded);
-        if (stringToBePadded.length() >= amountOfPadding) {
-            return stringToBePadded;
-        }
-        StringBuilder sb = new StringBuilder();
-        while (sb.length() < amountOfPadding - stringToBePadded.length()) {
-            sb.append(" ");
-        }
-        sb.append(stringToBePadded);
-        return sb.toString();
+
+        return String.format("%" + amountOfPadding + "s", stringToBePadded);
     }
 
     /**
@@ -29,7 +22,7 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by right-padding
      */
     public static String padRight(String stringToBePadded, int amountOfPadding) {
-        return String.format("%1$-" + amountOfPadding, stringToBePadded);
+        return String.format("%-" + amountOfPadding + "s", stringToBePadded);
     }
 
     /**
