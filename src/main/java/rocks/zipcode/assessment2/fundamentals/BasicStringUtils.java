@@ -62,10 +62,8 @@ public class BasicStringUtils {
      * @return reverse of `string` with `charactersToRemove` removed
      */
     public static String removeCharactersThenReverse(String string, String charactersToRemove) {
-        String ans = string.replace(charactersToRemove, "");
-        StringBuilder tempString = new StringBuilder(ans);
-        StringBuilder revString = tempString.reverse();
-        String answer = revString.toString();
+
+        String answer = reverse(removeCharacters(string,charactersToRemove));
 
         return answer;
     }
