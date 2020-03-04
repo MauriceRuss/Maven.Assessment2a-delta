@@ -31,12 +31,9 @@ public class StringUtils {
      * @return the string repeated and concatenated `n` times
      */
     public static String repeatString(String stringToBeRepeated, int numberOfTimeToRepeat) {
-        int n = numberOfTimeToRepeat;
-        String in = stringToBeRepeated;
-
         String result = "";
-        for (int i = 0; i < n; ++i) {
-            result += in;
+        for (int i = 0; i < numberOfTimeToRepeat; ++i) {
+            result += stringToBeRepeated;
         }
         return result;
     }
