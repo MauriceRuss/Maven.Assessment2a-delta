@@ -38,14 +38,7 @@ public class PredicateUtilities {
      * @return true if `value` is a multiple of `multiple`
      */
     public static Boolean isMultipleOfN(Integer value, Integer multiple) {
-        int count = 0;
-        for (int i = 0; i < value; i++) {
-            if (value % multiple!= 0) {
-                count++;
-            }
-            return true;
-        }
-            return false;
+            return value % multiple == 0;
     }
 
     /**
