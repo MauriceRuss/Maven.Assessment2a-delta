@@ -27,14 +27,8 @@ public class PredicateUtilities {
      * @return true if `value` is a multiple of 3
      */
     public static Boolean isMultipleOf3(Integer value) {
-        int count = 0;
-        for (int i = 0; i < value; i++) {
-            if (value % 3 != 0) {
-                count++;
-            }
-            return true;
-        }
-        return false;
+
+        return value % 3 == 0;
     }
 
     /**
