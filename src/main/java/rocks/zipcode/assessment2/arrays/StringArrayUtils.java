@@ -22,7 +22,7 @@ public class StringArrayUtils {
      * @return an array all elements between after `startingIndex`
      */
     public static String[] getEndingArray(String[] arrayToBeSpliced, int startingIndex) {
-        String[] gea = Arrays.copyOfRange(arrayToBeSpliced, startingIndex, startingIndex + arrayToBeSpliced.length);
+        String[] gea = Arrays.copyOfRange(arrayToBeSpliced, startingIndex,  arrayToBeSpliced.length);
         return gea;
     }
 }
