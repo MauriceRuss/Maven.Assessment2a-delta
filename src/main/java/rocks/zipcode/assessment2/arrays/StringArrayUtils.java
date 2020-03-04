@@ -13,10 +13,8 @@ public class StringArrayUtils {
      * @return an array with all elements between `startingIndex` and `endingIndex`
      */
     public static String[] getSubArray(String[] arrayToBeSpliced, int startingIndex, int endingIndex) {
-        String[] gsa = Arrays.copyOfRange(arrayToBeSpliced, startingIndex, endingIndex);
-        return gsa;
+        return null;
     }
-
 
     /**
      * @param arrayToBeSpliced - array to be evaluated

@@ -42,10 +42,17 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
-        char one = charactersToRemove.charAt(0);
-        char two = charactersToRemove.charAt(1);
-        char three = charactersToRemove.charAt(2);
-        String ans = string.replace(charactersToRemove, "");
+        char[] charArray = string.toCharArray();
+        char[] chars = charactersToRemove.toCharArray();
+        String ans = string;
+
+        for (int i = 0; i < charactersToRemove.length(); i++) {
+            for(char j :charArray){
+                if(j == chars[i]){
+                    ans = ans.replace(j+"","");
+                }
+            }
+        }
         return ans;
     }
 
