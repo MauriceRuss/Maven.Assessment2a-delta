@@ -7,13 +7,13 @@ import java.util.Map;
  * Use a map to solve
  */
 public class MonthConversion {
-    HashMap<Integer, String> month = new HashMap<>();
+    HashMap<Integer, String> months = new HashMap<Integer, String>();
     /**
      * @param monthNumber - ordinal of month in the year; i.e. January = 1, February = 2
      * @param monthName - name of month
      */
     public void add(Integer monthNumber, String monthName) {
-        month.put(monthNumber, monthName);
+        this.months.put(monthNumber, monthName);
     }
 
     /**
@@ -22,7 +22,7 @@ public class MonthConversion {
      */
     public String getName(Integer monthNumber) {
         //throw new NullPointerException();
-        return month.get(monthNumber);
+        return months.get(monthNumber);
     }
 
     /**
@@ -30,7 +30,7 @@ public class MonthConversion {
      * @return - the ordinal of the month in the year
      */
     public Integer getNumber(String monthName) {
-        for (Map.Entry<Integer, String> set : month.entrySet()) {
+        for (Map.Entry<Integer, String> set : months.entrySet()) {
             if (set.getValue().equals(monthName)) {
                 return set.getKey();
             }
@@ -43,7 +43,8 @@ public class MonthConversion {
      * @return true if the monthNumber is in the keySet
      */
     public Boolean isValidNumber(Integer monthNumber) {
-        return null;
+        this.months.containsKey(monthNumber);
+        return true;
     }
 
     /**
@@ -58,7 +59,7 @@ public class MonthConversion {
      * @return number of entries in this mapping
      */
     public Integer size() {
-        return -1;
+        return months.size();
     }
 
     /**
