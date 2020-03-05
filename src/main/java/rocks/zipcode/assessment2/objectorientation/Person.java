@@ -65,6 +65,6 @@ public class Person {
 
     @Override
     public boolean equals(Object o) {
-        return (Boolean)null;
+        return this.toString().equals(o.toString());
     }
 }
