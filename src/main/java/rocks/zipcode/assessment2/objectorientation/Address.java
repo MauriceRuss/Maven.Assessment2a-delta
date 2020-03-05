@@ -80,11 +80,6 @@ public class Address {
         this.zipcode = zipcode;
     }
 
-//    @Override
-//    public String toString (){
-//
-//        return "Address{" +  "addressLine1=" + addressLine1 + "addressLine2=" + addressLine2 + "city=" + city + "state="+ state + "zipcode=" + zipcode + "}";
-//    }
 
 
     @Override
@@ -100,11 +95,8 @@ public class Address {
 
     @Override
     public boolean equals(Object o) {
-        if (o == this) {
-            return true;
-        }
-        if (!(o instanceof Address)) {
-        } return false;
+
+         return this.toString().equals(o.toString());
         }
 
 
