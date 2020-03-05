@@ -52,7 +52,7 @@ public class MonthConversion {
      * @return true if the monthName is in the valueSet
      */
     public Boolean isValidMonth(String monthName) {
-        return null;
+        return this.months.containsValue(monthName);
     }
 
     /**
