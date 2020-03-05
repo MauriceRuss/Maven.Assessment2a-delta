@@ -43,8 +43,8 @@ public class MonthConversion {
      * @return true if the monthNumber is in the keySet
      */
     public Boolean isValidNumber(Integer monthNumber) {
-        this.months.containsKey(monthNumber);
-        return true;
+
+        return this.months.containsKey(monthNumber);
     }
 
     /**
@@ -67,6 +67,6 @@ public class MonthConversion {
      * @param monthName - name of month
      */
     public void update(Integer monthNumber, String monthName) {
-
+        this.months.replace(monthNumber, monthName);
     }
 }
